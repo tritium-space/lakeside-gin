@@ -64,5 +64,6 @@ html {
 }
 
 #bg1 {
-    background-image: url("../assets/Bilder/Bryan Shooting 1/ART00032.jpg");
+    /* background-image: url("../assets/Bilder/Bryan Shooting 1/ART00032.jpg"); */
+    background-image: url("../assets/ART00032.jpg");
 }

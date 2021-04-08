@@ -6,9 +6,12 @@
 
 :root {
     --default-text-color: black;
+    --secondary-text-color: white;
     --default-font-family: Arial, sans-serif;
+
     --elevated-pane-bg-color:  	#faf0e6;
     --subordinate-pane-bg-color: #fff0db;
+    --complimentary-pane-bg-color: #424642;
 
     /** header */
     --header-enlarged-height: 84px;

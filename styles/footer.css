@@ -1,0 +1,6 @@
+.footer {
+    height: 15em;
+    width: 100%;
+    background-color: var(--complimentary-pane-bg-color);
+    z-index: 501;
+}

@@ -5,9 +5,10 @@
 }
 
 :root {
-    /* --primary-pane-color: #262117; */
-    --elevated-pane-bg-color: rgb(189, 189, 189);
-    --subordinate-pane-bg-color: rgb(233, 233, 233);
+    --default-text-color: black;
+    --default-font-family: Arial, sans-serif;
+    --elevated-pane-bg-color:  	#faf0e6;
+    --subordinate-pane-bg-color: #fff0db;
 
     /** header */
     --header-enlarged-height: 84px;
@@ -23,7 +24,7 @@
 
     /** main page */
     --main-page-width: 80%;
-    --main-page-max-width: 1000px;
+    --main-page-max-width: 1500px;
 
     /** shadows */
     --full-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -36,6 +37,7 @@ html {
     height: 100%;
     width: 100%;
     margin: 0;
+    font-family: var(--default-font-family);
 }
 
 .parallax__container {

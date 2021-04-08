@@ -1,9 +1,9 @@
 .main-page {
-    width: 100vw;
     background-color: var(--subordinate-pane-bg-color);
     position: relative;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .main-page__scroller {

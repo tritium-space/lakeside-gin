@@ -21,6 +21,9 @@
     --header-logo-shrunk-height: 90%;
     --header-logo-shrunk-padding: 0;
     --header-logo-animation-duration: .6s;
+    --header-border-bottom-color: black;
+    --header-border-bottom-enlarged-width: 80px;
+    --header-border-bottom-animation-duration: .2s;
 
     /** main page */
     --main-page-width: 80%;

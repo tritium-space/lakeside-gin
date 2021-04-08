@@ -32,10 +32,19 @@
 }
 
 .header .header-items .logo-container {
-    height: 140%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#logo-container.enlarged {
+    height: var(--header-logo-enlarged-height);
+    animation: logo-shrunk-enlarged var(--header-logo-animation-duration);
+}
+
+#logo-container.shrunk {
+    height: var(--header-logo-shrunk-height);
+    animation: logo-enlarged-shrunk var(--header-logo-animation-duration);
 }
 
 .header .header-items .logo-container img {
@@ -74,5 +83,25 @@
         height: var(--header-enlarged-height);
         top: var(--header-enlarged-top);
         ;
+    }
+}
+
+@keyframes logo-enlarged-shrunk {
+    0% {
+        height: var(--header-logo-enlarged-height);
+    }
+
+    100% {
+        height: var(--header-logo-shrunk-height);
+    }
+}
+
+@keyframes logo-shrunk-enlarged {
+    0% {
+        height: var(--header-logo-shrunk-height);
+    }
+
+    100% {
+        height: var(--header-logo-enlarged-height);
     }
 }

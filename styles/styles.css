@@ -15,6 +15,9 @@
     --header-shrunk-height: 60px;
     --header-shrunk-top: 0;
     --header-animation-duration: .2s;
+    --header-logo-enlarged-height: 130%;
+    --header-logo-shrunk-height: 90%;
+    --header-logo-animation-duration: .6s;
 
     /** main page */
     --main-page-width: 80%;

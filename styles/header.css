@@ -75,6 +75,7 @@
 
 .header .header-items .group .item-container .link-container {
     height: 3em;
+    width: 5em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +94,7 @@
 }
 
 .header .header-items .group .item-container .bottom-border {
-    height: 1px;
+    height: var(--header-border-bottom-enlarged-thicc);
     background-color: var(--header-border-bottom-color);
     width: 0;
     animation: border-enlarged-shrunk var(--header-border-bottom-animation-duration);
@@ -169,5 +170,15 @@
 
     100% {
         width: var(--header-border-bottom-enlarged-width);
+    }
+}
+
+@keyframes font-bold-normal {
+    0% {
+        font-weight: bold;
+    }
+
+    100% {
+        font-weight: normal;
     }
 }

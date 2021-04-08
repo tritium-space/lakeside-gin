@@ -23,6 +23,7 @@
     --header-logo-animation-duration: .6s;
     --header-border-bottom-color: black;
     --header-border-bottom-enlarged-width: 80px;
+    --header-border-bottom-enlarged-thicc: 2px;
     --header-border-bottom-animation-duration: .2s;
 
     /** main page */

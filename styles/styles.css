@@ -52,8 +52,35 @@ html {
     font-family: var(--default-font-family);
 }
 
-.parallax-container {
+.main-page {
+    background-color: var(--subordinate-pane-bg-color);
     position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.main-page-scroller {
+    width: var(--main-page-width);
+    max-width: var(--main-page-max-width);
+    margin-top: calc(var(--header-enlarged-height) + var(--header-enlarged-top));
+    display: flex;
+    flex-direction: column;
+    z-index: 500;
+    box-shadow: var(--full-shadow);
+}
+
+img {
+    height: 100%;
+    max-width: 100%;
+}
+
+.bottom-shadow {
+    box-shadow: var(--bottom-shadow);
+}
+
+.upper-shadow {
+    box-shadow: var(--upper-shadow);
 }
 
 .parallax__container {

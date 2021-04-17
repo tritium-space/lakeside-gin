@@ -1,9 +1,11 @@
 .history {
-    width: 100%;
-    height: 100em;
-    background-color: var(--subordinate-pane-bg-color);
+    width: var(--main-page-width);
+    max-width: var(--main-page-max-width);
+    margin-top: calc(var(--header-enlarged-height) + var(--header-enlarged-top));
+    display: flex;
+    flex-direction: column;
+    z-index: 500;
     box-shadow: var(--full-shadow);
-    padding-top: 7em;
 }
 
 .history .history-item {

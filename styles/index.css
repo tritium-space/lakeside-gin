@@ -84,3 +84,7 @@ h1 {
     font-size: 40px;
     margin: 16px;
 }
+
+p {
+    text-align: center;
+}

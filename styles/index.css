@@ -1,5 +1,17 @@
-s.overlay-container {
+.overlay-container {
     position: relative;
+}
+
+#bg1 {
+    background-image: url("../assets/ART00058.jpg");
+}
+
+#bg2 {
+    background-image: url("../assets/bottles.jpg");
+}
+
+#bg3 {
+    background-image: url("../assets/ART00056.jpg");
 }
 
 .overlay {

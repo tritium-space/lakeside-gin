@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Antic Slab;
+    src: url(../font/AnticSlab-Regular.ttf);
+}
+
 *,
 :after,
 :before {
@@ -7,7 +12,7 @@
 :root {
     --default-text-color: black;
     --secondary-text-color: white;
-    --default-font-family: Arial, sans-serif;
+    --default-font-family: Antic Slab;
 
     --elevated-pane-bg-color:  	#faf0e6;
     --subordinate-pane-bg-color: #fff0db;

@@ -1,15 +1,12 @@
-.container {
-}
-
-.container .partner {
+.partner {
     position: relative;
 }
 
-.container .partner img {
+.partner img {
     width: 100%;
 }
 
-.container .partner .name {
+.partner .name {
     position: absolute;
     left: 0;
     top: 50%;

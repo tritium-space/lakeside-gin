@@ -1,6 +1,22 @@
 .footer {
-    height: 15em;
     width: 100%;
     background-color: var(--complimentary-pane-bg-color);
     z-index: 501;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px 3px 50px;
+}
+
+.footer .contact-bock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer p {
+    margin: 0 0 7px 0;
+    font-size: 13px;
+    color: white;
 }

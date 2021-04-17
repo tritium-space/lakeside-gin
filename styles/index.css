@@ -16,7 +16,7 @@ s.overlay-container {
 }
 
 .description-container {
-    max-width: 70%;
+    max-width: 60%;
     display: flex;
     justify-content: center;
     flex-direction: column;

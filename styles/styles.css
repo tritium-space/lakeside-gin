@@ -52,6 +52,10 @@ html {
     font-family: var(--default-font-family);
 }
 
+.parallax-container {
+    position: relative;
+}
+
 .parallax__container {
     clip: rect(0, auto, auto, 0);
     height: 100%;
@@ -78,6 +82,10 @@ html {
     background-size: cover;
 }
 
-.parallax-c {
-    height: 60em;
+.parallax-high {
+    height: 600px;
+}
+
+.parallax-low {
+    height: 500px;
 }

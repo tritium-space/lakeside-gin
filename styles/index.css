@@ -45,6 +45,17 @@ img {
     color: var(--secondary-text-color);
 }
 
+.overlay .logo-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+
+.overlay .logo-container p {
+    font-size: 16px;
+}
+
 .flex {
     display: flex;
     flex-direction: column;

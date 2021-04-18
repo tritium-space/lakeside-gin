@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.history-item .desc-container img {
+.history-item .desc-container .silhouette {
     width: 100%;
     max-width: 400px;
 }

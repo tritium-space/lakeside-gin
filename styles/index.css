@@ -2,6 +2,10 @@
     position: relative;
 }
 
+.overlay-container img {
+    max-height: 500px;
+}
+
 .social-media-posts {
     background-color: var(--elevated-pane-bg-color);
     height: 300px;

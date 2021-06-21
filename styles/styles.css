@@ -3,9 +3,7 @@
     src: url(../font/AnticSlab-Regular.ttf);
 }
 
-*,
-:after,
-:before {
+*, :after, :before {
     box-sizing: border-box;
 }
 
@@ -13,11 +11,9 @@
     --default-text-color: black;
     --secondary-text-color: white;
     --default-font-family: Antic Slab;
-
-    --elevated-pane-bg-color:  	#f0efe0;
+    --elevated-pane-bg-color: #f0efe0;
     --subordinate-pane-bg-color: #1E1A0F;
     --complimentary-pane-bg-color: #424642;
-
     /** header */
     --header-enlarged-height: 84px;
     --header-enlarged-top: 16px;
@@ -33,19 +29,16 @@
     --header-border-bottom-enlarged-width: 80px;
     --header-border-bottom-enlarged-thicc: 2px;
     --header-border-bottom-animation-duration: .2s;
-
     /** main page */
     --main-page-width: 80%;
     --main-page-max-width: 1500px;
-
     /** shadows */
     --full-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    --upper-shadow: 0px -9px 9px -3px rgba(0,0,0,0.28);
-    --bottom-shadow: 0px 9px 9px -3px rgba(0,0,0,0.28);
+    --upper-shadow: 0px -9px 9px -3px rgba(0, 0, 0, 0.28);
+    --bottom-shadow: 0px 9px 9px -3px rgba(0, 0, 0, 0.28);
 }
 
-body,
-html {
+body, html {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -103,7 +96,6 @@ img {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     width: 100%;
-
     /* BG behaviour */
     background-position: center;
     background-repeat: no-repeat;

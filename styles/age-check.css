@@ -1,5 +1,5 @@
 .age-check-overlay {
-    /* visibility: hidden; */
+    visibility: visible;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -9,11 +9,29 @@
     position: fixed;
     top: 0;
     left: 0;
+    background: var(--subordinate-pane-bg-color-opaque);
 }
 
 .age-check {
-    width: 50em;
+    width: 30em;
     height: 40em;
-    background-color: white;
     box-shadow: var(--full-shadow);
+    background-color: var(--elevated-pane-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.age-check .logo-container {
+    height: 10em;
+}
+
+.logo-container img {
+    height: 100%;
+}
+
+.age-input .single-age-input {
+    width: 50px;
+    height: 37px;
 }

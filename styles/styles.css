@@ -12,7 +12,8 @@
     --secondary-text-color: white;
     --default-font-family: Antic Slab;
     --elevated-pane-bg-color: #f0efe0;
-    --subordinate-pane-bg-color: #1E1A0F;
+    --subordinate-pane-bg-color: rgba(30, 26, 15, 1);
+    --subordinate-pane-bg-color-opaque: rgba(30, 26, 15, .8);
     --complimentary-pane-bg-color: #424642;
     /** header */
     --header-enlarged-height: 84px;

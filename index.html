@@ -13,10 +13,18 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 
-<body>
+<body id="body">
     <div class="age-check-overlay" id="age-check">
         <div class="age-check">
-            <button onclick="setLocalStorage();">Suff</button>
+            <div class="logo-container">
+                <img src="assets/static/logo_cursive.png">
+            </div>
+            <div class="age-input">
+                <input id="day-input" class="single-age-input" autofocus onkeyup="dayInput(this.value);">
+                <input id="month-input" class="single-age-input" onkeyup="monthInput(this.value);">
+                <input id="year-input" class="single-age-input" onkeyup="yearInput(this.value);">
+            </div>
+            <button onclick="setVerified();">Suff</button>
         </div>
     </div>
     <header id="header" class="header enlarged">

@@ -1,17 +1,17 @@
 # Lakeside-gin
 
-This webpage was created for lakeside-gin.ch
+This webpage was created for [lakeside-gin.ch](lakeside-gin.ch)
 
 Alternate domains:
-- lakeside-gin.ch
-- lakeside-moonshine.ch
-- lakeside-vodka.ch
-- lakeside-whisky.ch
-- lakeside-whiskey.ch
-- see-destillerie.ch
-- see-distillerie.ch
-- seedestillerie.ch
-- seedistillerie.ch
+- [lakeside-gin.ch](lakeside-gin.ch)
+- [lakeside-moonshine.ch](lakeside-moonshine.ch)
+- [lakeside-vodka.ch](lakeside-vodka.ch)
+- [lakeside-whisky.ch](lakeside-whisky.ch)
+- [lakeside-whiskey.ch](lakeside-whiskey.ch)
+- [see-destillerie.ch](see-destillerie.ch)
+- [see-distillerie.ch](see-distillerie.ch)
+- [seedestillerie.ch](seedestillerie.ch)
+- [seedistillerie.ch](seedistillerie.ch)
 
 ### Viewing the site locally
 

@@ -1,5 +1,18 @@
 # Lakeside-gin
 
+This webpage was created for lakeside-gin.ch
+
+Alternate domains:
+- lakeside-gin.ch
+- lakeside-moonshine.ch
+- lakeside-vodka.ch
+- lakeside-whisky.ch
+- lakeside-whiskey.ch
+- see-destillerie.ch
+- see-distillerie.ch
+- seedestillerie.ch
+- seedistillerie.ch
+
 ### Viewing the site locally
 
 Simply view the `index.html` in your favorite browser.

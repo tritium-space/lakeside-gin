@@ -83,3 +83,5 @@ function submit() {
 if (!verified()) {
     openPrompt();
 }
+
+document.getElementById(dayInputID).focus();

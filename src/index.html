@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/age-check.css">
-    <link rel="stylesheet" href="styles/team.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body id="body">
@@ -23,7 +23,7 @@
                 <p>Sie müssen über 18 Jahre alt sein, um diese Website besuchen zu können.</p>
             </div>
             <div class="age-input">
-                <input id="day-input" class="single-age-input" autofocus onkeyup="dayInput(this.value);">
+                <input id="day-input" class="single-age-input" onkeyup="dayInput(this.value);">
                 /
                 <input id="month-input" class="single-age-input" onkeyup="monthInput(this.value);">
                 /
@@ -45,7 +45,7 @@
                     <div class="link-container">
                         <a href="history.html">Geschichte</a>
                     </div>
-                    <span class="bottom-border"></span>
+                    <span class="bottom-border"></spanY>
                 </div>
             </div>
             <div class="logo-container enlarged" id="logo-container">
@@ -56,68 +56,67 @@
                     <div class="link-container">
                         <a href="https://see-distillerie.dod.ch/">Shop</a>
                     </div>
-                    <span class="bottom-border"></span>
+                    <span class="bottom-border"></spanY>
                 </div>
                 <div class="item-container">
                     <div class="link-container">
                         <a href="team.html">Team</a>
                     </div>
-                    <span class="bottom-border"></span>
+                    <span class="bottom-border"></spanY>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="main-page">
+    <div class="main-page bottom-shadow">
         <div class="main-page-scroller">
-            <div class="partner">
-                <img src="assets/portrait/gerold.jpg">
-                <div class="name">
-                    <h1>Gerold</h1>
+            <section class="overlay-container bottom-shadow parallax-low">
+                <div class="parallax" id="bg3"></div>
+                <div class="overlay">
+                    <div class="logo-container">
+                        <img src="assets/static/logo_plain.png">
+                        <p>Lokale Leidenschaft für hochwertige Destillate.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="partner">
-                <img src="assets/portrait/beat.jpg">
-                <div class="name">
-                    <h1>Beat</h1>
+            </section>
+
+            <section class="overlay-container bottom-shadow">
+                <img src="assets/index/distillery_front.jpg"></img>
+                <div class="overlay">
+                    <h1>See-Distillerie Beckenried</h1>
+                    <p class="description">Die Brennerei-Manufaktur in Nidwalden</p>
+                    <a class="button-link" href="history.html">Mehr erfahren ></a>
                 </div>
-            </div>
-            <div class="partner">
-                <img src="assets/portrait/paul.jpg">
-                <div class="name">
-                    <h1>Paul</h1>
+            </section>
+
+            <section class="overlay-containers parallax-high">
+                <div class="parallax" id="bg1"></div>
+                <div class="overlay">
+                    <div class="description-container">
+                        <h1>Whiskey</h1>
+                        <p class="description">Hergestellt aus bestem Malz, zweifach destilliert, wird unser Whisky in
+                            Eichenfässern eingelagert und erhält die benötigte Zeit, um zur geschmacklichen Vollendung
+                            zu
+                            reifen. Jede Abfüllung ist individuell und einzigartig.</p>
+                        <a class="button-link" href="https://see-distillerie.dod.ch/">Einkaufen ></a>
+                    </div>
                 </div>
-            </div>
-            <div class="partner">
-                <img src="assets/portrait/nils.jpg">
-                <div class="name">
-                    <h1>Nils</h1>
+            </section>
+
+            <section class="overlay-container parallax-high">
+                <div class="parallax" id="bg2"></div>
+                <div class="overlay">
+                    <div class="description-container">
+                        <h1>Gin</h1>
+                        <p class="description">Hergestellt aus Schweizer Gerste, mehrfach behutsam destilliert,
+                            verkörpert
+                            LAKESIDE Gin die
+                            Natürlichkeit und Frische der Nidwaldner Bergwelt verbunden mit der Aromatik heimischer und
+                            exotischer Botanicals.</p>
+                        <a class="button-link" href="https://see-distillerie.dod.ch/">Einkaufen ></a>
+                    </div>
                 </div>
-            </div>
-            <div class="partner">
-                <img src="assets/portrait/armin.jpg">
-                <div class="name">
-                    <h1>Armin</h1>
-                </div>
-            </div>
-            <div class="partner">
-                <img src="assets/portrait/philipp.jpg">
-                <div class="name">
-                    <h1>Philipp</h1>
-                </div>
-            </div>
-            <div class="partner">
-                <img src="assets/portrait/blackface.jpg">
-                <div class="name">
-                    <h1>Roger</h1>
-                </div>
-            </div>
-            <div class="partner">
-                <img src="assets/portrait/blackbody.jpg">
-                <div class="name">
-                    <h1>Andy</h1>
-                </div>
-            </div>
+            </section>
         </div>
     </div>
 
@@ -133,6 +132,8 @@
         </div>
     </footer>
 
+    <script src="lib/universal-parallax.min.js"></script>
+    <script src="lib/parallax-control.js"></script>
     <script src="lib/age-check.js"></script>
     <script src="lib/main.js"></script>
 </body>

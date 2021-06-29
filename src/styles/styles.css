@@ -115,6 +115,7 @@ img {
 }
 
 .button-link {
+    /* mix-blend-mode: difference; */
     padding: .75em;
     border-radius: 2px;
     border: solid 2px var(--secondary-text-color);
@@ -130,5 +131,24 @@ img {
 
 .button-link:hover {
     border: solid 3px var(--secondary-text-color);
+    font-weight: bold;
+}
+
+.button-link-hc {
+    padding: .75em;
+    border-radius: 2px;
+    border: solid 2px var(--default-text-color);
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--default-text-color);
+    height: 3em;
+    width: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-link-hc:hover {
+    border: solid 3px var(--default-text-color);
     font-weight: bold;
 }

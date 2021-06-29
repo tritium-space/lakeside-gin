@@ -6,6 +6,7 @@ const ageCheckID = "age-check";
 const dayInputID = "day-input";
 const monthInputID = "month-input";
 const yearInputID = "year-input";
+const submitID = "submit";
 
 function closePrompt() {
     e = document.getElementById(ageCheckID);
@@ -39,7 +40,7 @@ function monthInput(input) {
 
 function yearInput(input) {
     if (valid(input, 4)) {
-        document.getElementsByTagName("button")[0].focus();
+        document.getElementById(submitID).focus();
     }
 };
 

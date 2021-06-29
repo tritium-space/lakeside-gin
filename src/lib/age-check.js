@@ -39,6 +39,7 @@ function monthInput(input) {
 
 function yearInput(input) {
     if (valid(input, 4)) {
+        document.getElementsByTagName("button")[0].focus();
     }
 };
 

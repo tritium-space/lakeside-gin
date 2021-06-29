@@ -30,6 +30,9 @@
     --header-border-bottom-enlarged-width: 80px;
     --header-border-bottom-enlarged-thicc: 2px;
     --header-border-bottom-animation-duration: .2s;
+    /** age check */
+    --age-input-border-bottom-enlarged-thicc: 2px;
+    --age-input-width: 50px;
     /** main page */
     --main-page-width: 80%;
     --main-page-max-width: 1500px;
@@ -138,9 +141,9 @@ img {
     padding: .75em;
     border-radius: 2px;
     border: solid 2px var(--default-text-color);
-    background-color: transparent;
+    background-color: var(--default-text-color);
     text-decoration: none;
-    color: var(--default-text-color);
+    color: var(--secondary-text-color);
     height: 3em;
     width: 10em;
     display: flex;
@@ -151,4 +154,24 @@ img {
 .button-link-hc:hover {
     border: solid 3px var(--default-text-color);
     font-weight: bold;
+}
+
+@keyframes border-enlarged-shrunk {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes border-shrunk-enlarged {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
 }

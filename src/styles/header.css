@@ -153,26 +153,6 @@
     }
 }
 
-@keyframes border-enlarged-shrunk {
-    0% {
-        width: var(--header-border-bottom-enlarged-width);
-    }
-
-    100% {
-        width: 0;
-    }
-}
-
-@keyframes border-shrunk-enlarged {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: var(--header-border-bottom-enlarged-width);
-    }
-}
-
 @keyframes font-bold-normal {
     0% {
         font-weight: bold;

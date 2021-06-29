@@ -23,11 +23,20 @@
                 <p>Sie müssen über 18 Jahre alt sein, um diese Website besuchen zu können.</p>
             </div>
             <div class="age-input">
-                <input id="day-input" class="single-age-input" onkeyup="dayInput(this.value);">
+                <span class="input-container">
+                    <input id="day-input" class="single-age-input" onkeyup="dayInput(this.value);" placeholder="DD">
+                    <span class="bottom-border"></span>
+                </span>
                 /
-                <input id="month-input" class="single-age-input" onkeyup="monthInput(this.value);">
+                <span class="input-container">
+                    <input id="month-input" class="single-age-input" onkeyup="monthInput(this.value);" placeholder="MM">
+                    <span class="bottom-border"></span>
+                </span>
                 /
-                <input id="year-input" class="single-age-input" onkeyup="yearInput(this.value);">
+                <span class="input-container">
+                    <input id="year-input" class="single-age-input" onkeyup="yearInput(this.value);" placeholder="YYYY">
+                    <span class="bottom-border"></span>
+                </span>
             </div>
             <a id="submit" class="button-link-hc" href="" onclick="submit();">Zur Webseite</a>
             <!-- <a id="submit" class="button-link" href="" onclick="submit();">Zur Webseite</a> -->

@@ -85,8 +85,21 @@
     .footer {
         min-height: 100vh;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #262626;
         scroll-snap-align: start;
         z-index: 100;
+    }
+
+    .flex-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .power {
+        /* align-self: flex-end; */
     }
 
     @keyframes show-scroller-overlay {

@@ -6,20 +6,40 @@
 
     .scroller-overlay {
         top: calc(50% - 2em - 0.8em);
-        left: 0.1em;
+        right: 0;
+        width: 2em;
+        padding-right: 0.4em;
         position: fixed;
         display: flex;
         flex-direction: column;
+        align-items: center;
         z-index: 1000;
     }
 
     .scroller-overlay-item {
         height: 1em;
         width: 1em;
-        border: 0.3em solid white;
+        /* background-color: white; */
+        border: 0.2em solid white;
         border-radius: 50%;
+        box-sizing: border-box;
         margin: 0.2em;
         display: inline-block; 
+    }
+
+    .active-section {
+        /* height: 1em;
+        width: 1em; */
+        height: 0.7em;
+        width: 0.7em;
+        background-color: white;
+        animation: active-section-overlay 0.3s;
+    }
+
+    .inactive-section {
+        height: 0.7em;
+        width: 0.7em;
+        animation: inactive-section-overlay 0.3s;
     }
 
     .main-page {
@@ -31,8 +51,9 @@
         width: 100%;
         margin-top: 0;
         overflow-y: scroll;
-        scroll-snap-type: y mandatory;
         -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
     }
 
     .overlay-container {
@@ -58,5 +79,29 @@
         position: relative;
         scroll-snap-align: start;
         z-index: 100;
+    }
+
+    @keyframes active-section-overlay {
+        0% {
+            height: 0.7em;
+            width: 0.7em;
+        }
+
+        100% {
+            height: 1em;
+            width: 1em;
+        }
+    }
+
+    @keyframes inactive-section-overlay {
+        0% {
+            height: 1em;
+            width: 1em;
+        }
+
+        100% {
+            height: 0.7em;
+            width: 0.7em;
+        }
     }
 }

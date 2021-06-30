@@ -18,6 +18,9 @@ if (window.matchMedia("(max-width: 768px)").matches) {
             entry => {
                 if (entry.isIntersecting) {
                     let item = document.querySelector("[data-js='" + entry.target.id +"']")
+                    if (!item.parentElement.classList.contains("shown-scroller-overlay")) {
+                        item.parentElement.classList.add("shown-scroller-overlay")
+                    }
                     item.classList.remove("inactive-section")
                     item.classList.add("active-section")
                 }
@@ -28,4 +31,5 @@ if (window.matchMedia("(max-width: 768px)").matches) {
     targets.forEach(element => {
         observer.observe(element);
     });
+    observer.observe(document.getElementById("footer"))
 }

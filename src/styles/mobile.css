@@ -6,9 +6,9 @@
 
     .scroller-overlay {
         top: calc(50% - 2em - 0.8em);
-        right: 0;
+        right: -2em;
         width: 2em;
-        padding-right: 0.4em;
+        padding-right: 0.6em;
         position: fixed;
         display: flex;
         flex-direction: column;
@@ -16,30 +16,38 @@
         z-index: 1000;
     }
 
+    .shown-scroller-overlay {
+        right: 0;
+        animation: show-scroller-overlay 0.5s;
+    }
+
+    .hidden-scroller-overlay {
+        right: -2em;
+        animation: hide-scroller-overlay 0.5s;
+    }
+
     .scroller-overlay-item {
         height: 1em;
         width: 1em;
-        /* background-color: white; */
-        border: 0.2em solid white;
+        margin: 0.2em;
+        border: 0.15em solid white;
         border-radius: 50%;
         box-sizing: border-box;
-        margin: 0.2em;
         display: inline-block; 
     }
 
+    .footer-item {
+        border-radius: 0;
+        height: 0.6em;
+    }
+
     .active-section {
-        /* height: 1em;
-        width: 1em; */
-        height: 0.7em;
-        width: 0.7em;
-        background-color: white;
-        animation: active-section-overlay 0.3s;
+        background-color: rgba(255,255,255,1);
+        animation: active-section-overlay 0.5s;
     }
 
     .inactive-section {
-        height: 0.7em;
-        width: 0.7em;
-        animation: inactive-section-overlay 0.3s;
+        animation: inactive-section-overlay 0.5s;
     }
 
     .main-page {
@@ -81,27 +89,41 @@
         z-index: 100;
     }
 
-    @keyframes active-section-overlay {
+    @keyframes show-scroller-overlay {
         0% {
-            height: 0.7em;
-            width: 0.7em;
+            right: -2em;
         }
 
         100% {
-            height: 1em;
-            width: 1em;
+            right: 0;
+        }
+    }
+    @keyframes hide-scroller-overlay {
+        0% {
+            right: 0;
+        }
+
+        100% {
+            right: -2em;
         }
     }
 
-    @keyframes inactive-section-overlay {
+    @keyframes active-section-overlay {
         0% {
-            height: 1em;
-            width: 1em;
+            background-color: rgba(255,255,255,0);
         }
 
         100% {
-            height: 0.7em;
-            width: 0.7em;
+            background-color: rgba(255,255,255,1);
+        }
+    }
+    @keyframes inactive-section-overlay {
+        0% {
+            background-color: rgba(255,255,255,1);
+        }
+
+        100% {
+            background-color: rgba(255,255,255,0);
         }
     }
 }

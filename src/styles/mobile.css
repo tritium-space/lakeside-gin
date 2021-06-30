@@ -1,7 +1,25 @@
-/* @media only screen and (max-width: 768px) { */
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 2000px) { */
     html {
         overflow: hidden;
+    }
+
+    .scroller-overlay {
+        top: calc(50% - 2em - 0.8em);
+        left: 0.1em;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    .scroller-overlay-item {
+        height: 1em;
+        width: 1em;
+        border: 0.3em solid white;
+        border-radius: 50%;
+        margin: 0.2em;
+        display: inline-block; 
     }
 
     .main-page {
@@ -11,6 +29,7 @@
     .main-page-scroller {
         height: 100%;
         width: 100%;
+        margin-top: 0;
         overflow-y: scroll;
         scroll-snap-type: y mandatory;
         -ms-scroll-snap-type: y mandatory;
@@ -21,15 +40,8 @@
         scroll-snap-align: start;
     }
 
-    .parallax__container {
-        clip: rect(0, auto, auto, 0);
-        height: 100%;
-        left: 0;
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: -100;
+    .fixed-section {
+        background-image: url('../assets/index/Distillery3.JPG');
     }
 
     .parallax {
@@ -39,5 +51,12 @@
         background-size: cover; 
         background-position: center center; 
         background-repeat: no-repeat; 
+    }
+
+    .footer {
+        min-height: 100vh;
+        position: relative;
+        scroll-snap-align: start;
+        z-index: 100;
     }
 }

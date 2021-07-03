@@ -1,0 +1,195 @@
+@media only screen and (max-width: 768px) {
+    html {
+        overflow: hidden;
+    }
+    .header {
+        height: 10vh;
+    }
+    .header-items {
+        justify-content: flex-start;
+    }
+    .header .header-items .logo-container {
+        width: unset;
+    }
+    .header .header-items .group {
+        display: none;
+    }
+    .hamburger {
+        height: 100%;
+        width: 12vw;
+        padding: 3vh 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .hamburger-line {
+        height: 0.1vh;
+        width: 100%;
+        background-color: black;
+        border: 0.1vh solid black;
+        border-radius: 5em;
+    }
+    .side-drawer {
+        height: 100vh;
+        width: 70vw;
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: var(--elevated-pane-bg-color);
+    }
+    .hidden-side-drawer {
+        left: -70vw;
+        display: block;
+    }
+    .side-drawer-container {
+        visibility: visible;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .scroller-overlay {
+        top: calc(50% - 2em - 0.8em);
+        right: -2em;
+        width: 2em;
+        padding-right: 0.6em;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+    }
+    .shown-scroller-overlay {
+        right: 0;
+        animation: show-scroller-overlay 0.5s;
+    }
+    .hidden-scroller-overlay {
+        right: -2em;
+        animation: hide-scroller-overlay 0.5s;
+    }
+    .scroller-overlay-item {
+        height: 1em;
+        width: 1em;
+        margin: 0.2em;
+        border: 0.15em solid white;
+        border-radius: 50%;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+    .footer-item {
+        border-radius: 3px;
+        height: 0.6em;
+    }
+    .active-section {
+        background-color: rgba(255, 255, 255, 1);
+        animation: active-section-overlay 0.5s;
+    }
+    .inactive-section {
+        animation: inactive-section-overlay 0.5s;
+    }
+    .main-page {
+        height: 100%;
+    }
+    .main-page-scroller {
+        height: 100%;
+        width: 100%;
+        margin-top: 0;
+        overflow-y: scroll;
+        -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
+    .overlay-container {
+        min-height: 100vh;
+        scroll-snap-align: start;
+    }
+    .fixed-section {
+        background-image: url('../assets/index/Distillery3.JPG');
+    }
+    .parallax {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .mobile-footer {
+        color: white;
+        display: block;
+        min-height: 100vh;
+        padding: 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        background-color: #262626;
+        scroll-snap-align: start;
+    }
+    .desktop-footer {
+        display: none;
+    }
+    .company-info {
+        padding-left: 1em;
+    }
+    .montain-range {
+        height: 10em;
+        width: 100%;
+        background-image: url('../assets/index/Bergkette_Banner_02-linie-weiss.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .page-info {
+        width: 100%;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .copyright {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .copyright p {
+        margin-right: 1em;
+    }
+    .power {
+        align-self: flex-end;
+    }
+    @keyframes show-scroller-overlay {
+        0% {
+            right: -2em;
+        }
+        100% {
+            right: 0;
+        }
+    }
+    @keyframes hide-scroller-overlay {
+        0% {
+            right: 0;
+        }
+        100% {
+            right: -2em;
+        }
+    }
+    @keyframes active-section-overlay {
+        0% {
+            background-color: rgba(255, 255, 255, 0);
+        }
+        100% {
+            background-color: rgba(255, 255, 255, 1);
+        }
+    }
+    @keyframes inactive-section-overlay {
+        0% {
+            background-color: rgba(255, 255, 255, 1);
+        }
+        100% {
+            background-color: rgba(255, 255, 255, 0);
+        }
+    }
+}

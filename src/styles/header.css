@@ -3,7 +3,7 @@
     background-color: var(--elevated-pane-bg-color);
     position: fixed;
     left: 0;
-    z-index: 9999;
+    z-index: 1;
     box-shadow: var(--full-shadow);
     display: flex;
     justify-content: center;
@@ -150,26 +150,6 @@
         height: var(--header-logo-enlarged-height);
         padding: var(--header-logo-enlarged-padding);
         box-shadow: var(--full-shadow);
-    }
-}
-
-@keyframes border-enlarged-shrunk {
-    0% {
-        width: var(--header-border-bottom-enlarged-width);
-    }
-
-    100% {
-        width: 0;
-    }
-}
-
-@keyframes border-shrunk-enlarged {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: var(--header-border-bottom-enlarged-width);
     }
 }
 

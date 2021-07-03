@@ -6,16 +6,18 @@ const ageCheckID = "age-check";
 const dayInputID = "day-input";
 const monthInputID = "month-input";
 const yearInputID = "year-input";
+const submitID = "submit";
+const body = document.querySelector("[data-js='body']")
 
 function closePrompt() {
     e = document.getElementById(ageCheckID);
-    document.getElementById("body").style.overflow = "scroll";
+    body.style.overflow = "scroll";
     e.style.visibility = "hidden";
 }
 
 function openPrompt() {
     e = document.getElementById(ageCheckID);
-    document.getElementById("body").style.overflow = "hidden";
+    body.style.overflow = "hidden";
     e.style.visibility = "visible";
 }
 
@@ -39,6 +41,7 @@ function monthInput(input) {
 
 function yearInput(input) {
     if (valid(input, 4)) {
+        document.getElementById(submitID).focus();
     }
 };
 

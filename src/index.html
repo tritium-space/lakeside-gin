@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/age-check.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/mobile.css">
 </head>
 
-<body id="body">
+<body data-js="body">
     <div class="age-check-overlay" id="age-check">
         <div class="age-check">
             <div class="logo-container">
@@ -23,54 +24,87 @@
                 <p>Sie müssen über 18 Jahre alt sein, um diese Website besuchen zu können.</p>
             </div>
             <div class="age-input">
-                <input id="day-input" class="single-age-input" onkeyup="dayInput(this.value);">
+                <span class="input-container">
+                    <input id="day-input" class="single-age-input" onkeyup="dayInput(this.value);" placeholder="DD">
+                    <span class="bottom-border"></span>
+                </span>
                 /
-                <input id="month-input" class="single-age-input" onkeyup="monthInput(this.value);">
+                <span class="input-container">
+                    <input id="month-input" class="single-age-input" onkeyup="monthInput(this.value);" placeholder="MM">
+                    <span class="bottom-border"></span>
+                </span>
                 /
-                <input id="year-input" class="single-age-input" onkeyup="yearInput(this.value);">
+                <span class="input-container">
+                    <input id="year-input" class="single-age-input" onkeyup="yearInput(this.value);" placeholder="YYYY">
+                    <span class="bottom-border"></span>
+                </span>
             </div>
-            <button onclick="submit();">Zur Webseite</button>
+            <a id="submit" class="button-link-hc" href="" onclick="submit();">Zur Webseite</a>
+            <!-- <a id="submit" class="button-link" href="" onclick="submit();">Zur Webseite</a> -->
         </div>
     </div>
-    <header id="header" class="header enlarged">
-        <div class="header-items">
-            <div class="group">
-                <div class="item-container">
-                    <div class="link-container">
-                        <a href="index.html">Home</a>
-                    </div>
-                    <span class="bottom-border"></span>
-                </div>
-                <div class="item-container">
-                    <div class="link-container">
-                        <a href="history.html">Geschichte</a>
-                    </div>
-                    <span class="bottom-border"></spanY>
-                </div>
-            </div>
-            <div class="logo-container enlarged" id="logo-container">
-                <img src="assets/static/logo_cursive.png">
-            </div>
-            <div class="group">
-                <div class="item-container">
-                    <div class="link-container">
-                        <a href="https://see-distillerie.dod.ch/">Shop</a>
-                    </div>
-                    <span class="bottom-border"></spanY>
-                </div>
-                <div class="item-container">
-                    <div class="link-container">
-                        <a href="team.html">Team</a>
-                    </div>
-                    <span class="bottom-border"></spanY>
-                </div>
-            </div>
-        </div>
-    </header>
+
+    <div class="scroller-overlay">
+        <a class="scroller-overlay-item" href="#section-1" data-js="section-1"></a>
+        <a class="scroller-overlay-item" href="#section-2" data-js="section-2"></a>
+        <a class="scroller-overlay-item" href="#section-3" data-js="section-3"></a>
+        <a class="scroller-overlay-item" href="#section-4" data-js="section-4"></a>
+        <a class="scroller-overlay-item footer-item" href="#footer" data-js="footer"></a>
+    </div>
 
     <div class="main-page bottom-shadow">
-        <div class="main-page-scroller">
-            <section class="overlay-container bottom-shadow parallax-low">
+        <div class="main-page-scroller-max">
+            <div class="side-drawer hidden-side-drawer">
+                <!-- <div class="side-drawer"> -->
+                <div class="side-drawer-container">
+                    <a href="index.html">Home</a>
+                    <a href="history.html">Geschichte</a>
+                    <a href="https://see-distillerie.dod.ch/">Shop</a>
+                    <a href="team.html">Team</a>
+                </div>
+            </div>
+            <header id="header" class="header enlarged">
+                <div class="header-items">
+                    <div class="hamburger">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </div>
+                    <div class="group">
+                        <div class="item-container">
+                            <div class="link-container">
+                                <a href="index.html">Home</a>
+                            </div>
+                            <span class="bottom-border"></span>
+                        </div>
+                        <div class="item-container">
+                            <div class="link-container">
+                                <a href="history.html">Geschichte</a>
+                            </div>
+                            <span class="bottom-border"></span>
+                        </div>
+                    </div>
+                    <div class="logo-container enlarged" id="logo-container">
+                        <img src="assets/static/logo_cursive.png">
+                    </div>
+                    <div class="group">
+                        <div class="item-container">
+                            <div class="link-container">
+                                <a href="https://see-distillerie.dod.ch/">Shop</a>
+                            </div>
+                            <span class="bottom-border"></span>
+                        </div>
+                        <div class="item-container">
+                            <div class="link-container">
+                                <a href="team.html">Team</a>
+                            </div>
+                            <span class="bottom-border"></span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="overlay-container bottom-shadow parallax-low" id="section-1">
                 <div class="parallax" id="bg3"></div>
                 <div class="overlay">
                     <div class="logo-container">
@@ -80,8 +114,7 @@
                 </div>
             </section>
 
-            <section class="overlay-container bottom-shadow">
-                <img src="assets/index/distillery_front.jpg"></img>
+            <section class="overlay-container bottom-shadow fixed-section" id="section-2">
                 <div class="overlay">
                     <h1>See-Distillerie Beckenried</h1>
                     <p class="description">Die Brennerei-Manufaktur in Nidwalden</p>
@@ -89,7 +122,7 @@
                 </div>
             </section>
 
-            <section class="overlay-containers parallax-high">
+            <section class="overlay-container parallax-high" id="section-3">
                 <div class="parallax" id="bg1"></div>
                 <div class="overlay">
                     <div class="description-container">
@@ -103,7 +136,7 @@
                 </div>
             </section>
 
-            <section class="overlay-container parallax-high">
+            <section class="overlay-container parallax-high" id="section-4">
                 <div class="parallax" id="bg2"></div>
                 <div class="overlay">
                     <div class="description-container">
@@ -117,24 +150,50 @@
                     </div>
                 </div>
             </section>
-        </div>
-    </div>
 
-    <footer class="footer">
-        <div class="contact-block">
-            <p>See-Distillerie Beckenried</p>
-            <p>Buochserstrasse 52</p>
-            <p>6375 Beckenried Switzerland</p>
-            <p>www.see-distillerie.ch | info@see-distillerie.ch</p>
+            <footer class="mobile-footer" id="footer">
+                <div class="company-info">
+                    <p>See-Distillerie Beckenried</p>
+                    <p>Buochserstrasse 52</p>
+                    <p>6375 Beckenried Switzerland</p>
+                    <p>www.see-distillerie.ch | info@see-distillerie.ch</p>
+                </div>
+                <div class="montain-range"></div>
+                <div class="page-info">
+                    <div class="copyright">
+                        <p>Copyright 2020 |</p>
+                        <p>See-Distillerie Beckenried AG |</p>
+                        <p>All Rights Reserved </p>
+                    </div>
+                    <!-- <div class="power">
+                        <p>powered by Tritium</p>
+                    </div> -->
+                </div>
+            </footer>
         </div>
-        <div class="copyright">
-            <p>Copyright 2020 | See-Distillerie Beckenried AG | All Rights Reserved </p>
-        </div>
-    </footer>
+
+        <footer class="desktop-footer">
+            <div class="company-info">
+                <p>See-Distillerie Beckenried</p>
+                <p>Buochserstrasse 52</p>
+                <p>6375 Beckenried Switzerland</p>
+                <p>www.see-distillerie.ch | info@see-distillerie.ch</p>
+            </div>
+            <div class="page-info">
+                <div class="copyright">
+                    <p>Copyright 2020 | See-Distillerie Beckenried AG | All Rights Reserved </p>
+                </div>
+                <!-- <div class="power">
+                    <p>powered by Tritium</p>
+                </div> -->
+            </div>
+        </footer>
+    </div>
 
     <script src="lib/universal-parallax.min.js"></script>
     <script src="lib/parallax-control.js"></script>
     <script src="lib/age-check.js"></script>
+    <script src="lib/mobile.js"></script>
     <script src="lib/main.js"></script>
 </body>
 

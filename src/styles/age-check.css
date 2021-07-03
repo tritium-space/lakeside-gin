@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 99999999;
+    z-index: 2;
     position: fixed;
     top: 0;
     left: 0;
@@ -36,7 +36,42 @@
     text-align: center;
 }
 
+.age-input {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: baseline;
+}
+
 .age-input .single-age-input {
-    width: 50px;
+    width: var(--age-input-width);
     height: 37px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.input-container input:focus + span {
+    width: var(--age-input-width);
+    animation: border-shrunk-enlarged var(--header-border-bottom-animation-duration);
+}
+
+.input-container span {
+    height: var(--age-input-border-bottom-enlarged-thicc);
+    background-color: var(--header-border-bottom-color);
+    width: 0;
+    animation: border-enlarged-shrunk var(--header-border-bottom-animation-duration);
+}
+
+input {
+    background-color: var(--elevated-pane-bg-color);
+    border: 0;
+    text-align: right;
+}
+
+input:focus-visible {
+    outline: 0;
 }

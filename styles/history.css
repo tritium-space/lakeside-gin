@@ -1,6 +1,6 @@
 .history-item .desc-container {
     width: 100%;
-    color: white;
+    color: var(--secondary-text-color);
     display: flex;
     justify-content: space-evenly;
     align-items: center;

@@ -10,6 +10,6 @@
     position: absolute;
     left: 0;
     top: 50%;
-    color: white;
+    color: var(--secondary-text-color);
     padding-left: 10em;
 }

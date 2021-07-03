@@ -45,7 +45,6 @@
 
 .age-input .single-age-input {
     width: var(--age-input-width);
-    height: 37px;
 }
 
 .input-container {

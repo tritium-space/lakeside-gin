@@ -4,6 +4,8 @@
     align-items: center;
     padding: 10px 30px;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     color: var(--secondary-text-color);
     position: fixed;
     bottom: 0;

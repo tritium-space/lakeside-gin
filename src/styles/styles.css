@@ -37,7 +37,7 @@
     --main-page-width: 80%;
     --main-page-max-width: 1500px;
     /** footer */
-    --footer-height: 200px;
+    --footer-height: 130px;
     /** shadows */
     --full-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     --upper-shadow: 0px -9px 9px -3px rgba(0, 0, 0, 0.28);
@@ -63,6 +63,14 @@ body, html {
 .main-page-scroller {
     width: var(--main-page-width);
     max-width: var(--main-page-max-width);
+    margin-top: calc(var(--header-enlarged-height) + var(--header-enlarged-top));
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--full-shadow);
+}
+
+.main-page-scroller-max {
+    width: 100%;
     margin-top: calc(var(--header-enlarged-height) + var(--header-enlarged-top));
     display: flex;
     flex-direction: column;

@@ -58,11 +58,13 @@ body, html {
     justify-content: center;
     width: 100%;
     margin-bottom: var(--footer-height);
+    z-index: 500;
 }
 
 .main-page-scroller {
-    width: var(--main-page-width);
-    max-width: var(--main-page-max-width);
+    /* width: var(--main-page-width);
+    max-width: var(--main-page-max-width); */
+    width: 100%;
     margin-top: calc(var(--header-enlarged-height) + var(--header-enlarged-top));
     display: flex;
     flex-direction: column;
@@ -154,6 +156,10 @@ img {
 .button-link-hc:hover {
     border: solid 3px var(--default-text-color);
     font-weight: bold;
+}
+
+.hidden-side-drawer {
+    display: none;
 }
 
 @keyframes border-enlarged-shrunk {

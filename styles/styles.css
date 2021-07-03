@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Antic Slab;
-    src: url(../font/AnticSlab-Regular.ttf);
+    font-family: Poppins-Light;
+    src: url(../font/Poppins-Light.ttf);
 }
 
 *, :after, :before {
@@ -10,7 +10,7 @@
 :root {
     --default-text-color: black;
     --secondary-text-color: white;
-    --default-font-family: Antic Slab;
+    --default-font-family: Poppins-Light;
     --elevated-pane-bg-color: #f0efe0;
     --subordinate-pane-bg-color: rgba(30, 26, 15, 1);
     --subordinate-pane-bg-color-opaque: rgba(30, 26, 15, .8);
@@ -140,26 +140,43 @@ img {
 
 .button-link:hover {
     border: solid 3px var(--secondary-text-color);
-    font-weight: bold;
 }
 
 .button-link-hc {
-    padding: .75em;
     border-radius: 2px;
-    border: solid 2px var(--default-text-color);
-    background-color: var(--default-text-color);
+    border: solid 3px var(--default-text-color);
+    color: var(--default-text-color);
     text-decoration: none;
-    color: var(--secondary-text-color);
-    height: 3em;
+    height: 4em;
     width: 10em;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+    transition: color .25s ease-in-out, border-color .25s ease-in-out;
+    z-index: 1;
 }
 
 .button-link-hc:hover {
-    border: solid 3px var(--default-text-color);
-    font-weight: bold;
+    color: var(--secondary-text-color);
+}
+
+.button-link-hc::before {
+    z-index: -1;
+    content: " ";
+    position: absolute;
+    background-color: var(--default-text-color);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    transition: right .15s ease-in-out;
+}
+
+.button-link-hc:hover::before {
+    right: 0;
 }
 
 .hidden-side-drawer {

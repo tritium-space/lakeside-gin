@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="styles/history.css">
 </head>
 
-<body id="body">
-    <div class="age-check-overlay" id="age-check">
+<body data-js="body">
+    <div class="age-check-overlay" data-js="age-check">
         <div class="age-check">
             <div class="logo-container">
                 <img src="assets/static/logo_cursive.png">
@@ -23,15 +23,25 @@
                 <p>Sie müssen über 18 Jahre alt sein, um diese Website besuchen zu können.</p>
             </div>
             <div class="age-input">
-                <input id="day-input" class="single-age-input" onkeyup="dayInput(this.value);">
-                /
-                <input id="month-input" class="single-age-input" onkeyup="monthInput(this.value);">
-                /
-                <input id="year-input" class="single-age-input" onkeyup="yearInput(this.value);">
+                <span class="input-container">
+                    <input id="day-input" class="single-age-input" onkeyup="dayInput(this.value);" placeholder="DD">
+                    <span class="bottom-border"></span>
+                </span>
+                <span class="date-divider"></span>
+                <span class="input-container">
+                    <input id="month-input" class="single-age-input" onkeyup="monthInput(this.value);" placeholder="MM">
+                    <span class="bottom-border"></span>
+                </span>
+                <span class="date-divider"></span>
+                <span class="input-container">
+                    <input id="year-input" class="single-age-input" onkeyup="yearInput(this.value);" placeholder="YYYY">
+                    <span class="bottom-border"></span>
+                </span>
             </div>
-            <button onclick="submit();">Zur Webseite</button>
+            <button class="button-link-hc" onclick="submit();">Zur Webseite</button>
         </div>
     </div>
+    
     <header id="header" class="header enlarged">
         <div class="header-items">
             <div class="group">
@@ -109,9 +119,6 @@
                 <div class="copyright">
                     <p>Copyright 2020 | See-Distillerie Beckenried AG | All Rights Reserved </p>
                 </div>
-                <!-- <div class="power">
-                    <p>powered by Tritium</p>
-                </div> -->
             </div>
         </footer>
     </div>

@@ -58,17 +58,14 @@ body, html {
     justify-content: center;
     width: 100%;
     margin-bottom: var(--footer-height);
-    z-index: 500;
 }
 
 .main-page-scroller {
-    /* width: var(--main-page-width);
-    max-width: var(--main-page-max-width); */
-    width: 100%;
+    width: var(--main-page-width);
+    max-width: var(--main-page-max-width);
     margin-top: calc(var(--header-enlarged-height) + var(--header-enlarged-top));
     display: flex;
     flex-direction: column;
-    z-index: 500;
     box-shadow: var(--full-shadow);
 }
 
@@ -93,7 +90,6 @@ img {
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: -100;
 }
 
 .parallax {

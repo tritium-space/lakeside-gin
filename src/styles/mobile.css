@@ -32,7 +32,7 @@
     .side-drawer {
         height: 100vh;
         width: 70vw;
-        z-index: 10000;
+        z-index: 1;
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -58,7 +58,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        z-index: 1000;
+        z-index: 1;
     }
     .shown-scroller-overlay {
         right: 0;
@@ -127,7 +127,6 @@
         align-items: flex-start;
         background-color: #262626;
         scroll-snap-align: start;
-        z-index: 100;
     }
     .desktop-footer {
         display: none;

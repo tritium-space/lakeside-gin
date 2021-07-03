@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 99999999;
+    z-index: 2;
     position: fixed;
     top: 0;
     left: 0;

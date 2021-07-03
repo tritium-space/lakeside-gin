@@ -15,7 +15,7 @@
 </head>
 
 <body data-js="body">
-    <div class="age-check-overlay" id="age-check">
+    <div class="age-check-overlay" data-js="age-check">
         <div class="age-check">
             <div class="logo-container">
                 <img src="assets/static/logo_cursive.png">
@@ -28,19 +28,18 @@
                     <input id="day-input" class="single-age-input" onkeyup="dayInput(this.value);" placeholder="DD">
                     <span class="bottom-border"></span>
                 </span>
-                /
+                <span class="date-divider"></span>
                 <span class="input-container">
                     <input id="month-input" class="single-age-input" onkeyup="monthInput(this.value);" placeholder="MM">
                     <span class="bottom-border"></span>
                 </span>
-                /
+                <span class="date-divider"></span>
                 <span class="input-container">
                     <input id="year-input" class="single-age-input" onkeyup="yearInput(this.value);" placeholder="YYYY">
                     <span class="bottom-border"></span>
                 </span>
             </div>
-            <a id="submit" class="button-link-hc" href="" onclick="submit();">Zur Webseite</a>
-            <!-- <a id="submit" class="button-link" href="" onclick="submit();">Zur Webseite</a> -->
+            <button class="button-link-hc" onclick="submit();">Zur Webseite</button>
         </div>
     </div>
 
@@ -55,7 +54,6 @@
     <div class="main-page bottom-shadow">
         <div class="main-page-scroller-max">
             <div class="side-drawer hidden-side-drawer">
-                <!-- <div class="side-drawer"> -->
                 <div class="side-drawer-container">
                     <a href="index.html">Home</a>
                     <a href="history.html">Geschichte</a>
@@ -165,9 +163,6 @@
                         <p>See-Distillerie Beckenried AG |</p>
                         <p>All Rights Reserved </p>
                     </div>
-                    <!-- <div class="power">
-                        <p>powered by Tritium</p>
-                    </div> -->
                 </div>
             </footer>
         </div>
@@ -183,9 +178,6 @@
                 <div class="copyright">
                     <p>Copyright 2020 | See-Distillerie Beckenried AG | All Rights Reserved </p>
                 </div>
-                <!-- <div class="power">
-                    <p>powered by Tritium</p>
-                </div> -->
             </div>
         </footer>
     </div>

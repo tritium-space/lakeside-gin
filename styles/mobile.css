@@ -29,9 +29,9 @@
         border: 0.1vh solid black;
         border-radius: 5em;
     }
-    .side-drawer {
-        height: 100vh;
-        width: 70vw;
+    .mobile-navigation {
+        width: 100vw;
+        top: 1em;
         z-index: 1;
         position: absolute;
         display: flex;
@@ -39,15 +39,36 @@
         justify-content: space-around;
         background-color: var(--elevated-pane-bg-color);
     }
-    .hidden-side-drawer {
-        left: -70vw;
-        display: block;
+    .shown-mobile-navigation {
+        height: 100vh;
+        top: 0;
+        animation: show-navigation 0.5s;
     }
-    .side-drawer-container {
-        visibility: visible;
-        height: 20vh;
+    .hidden-mobile-navigation {
+        height: 0;
+        top: 1em;
+        animation: hide-navigation 0.5s;
+    }
+    .mobile-navigation-container {
+        left: -40vw;
+        height: 40vh;
+        position: absolute;
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
+    }
+    .mobile-navigation-item {
+        font-size: 3em;
+    }
+    .shown-mobile-navigation-item {
+        font-size: 3em;
+        transform: translateX(50vw);
+        animation: show-navigation-item 0.5s;
+    }
+    .hidden-mobile-navigation-item {
+        font-size: 3em;
+        transform: translateX(0vw);
+        animation: hide-navigation-item 0.5s;
     }
     .scroller-overlay {
         top: calc(50% - 2em - 0.8em);
@@ -164,20 +185,48 @@
     .power {
         align-self: flex-end;
     }
-    @keyframes show-scroller-overlay {
+    @keyframes show-navigation {
         0% {
-            right: -2em;
+            height: 0;
+            opacity: 0;
+            top: 1em;
         }
         100% {
-            right: 0;
+            height: 100vh;
+            opacity: 1;
+            top: 0;
         }
     }
-    @keyframes hide-scroller-overlay {
+    @keyframes hide-navigation {
         0% {
-            right: 0;
+            height: 100vh;
+            opacity: 1;
+            top: 0;
         }
         100% {
-            right: -2em;
+            height: 0;
+            opacity: 0;
+            top: 1em;
+        }
+    }
+    @keyframes show-navigation-item {
+        0% {
+            opacity: 0;
+            transform: translateX(0vw);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(50vw);
+        }
+    }
+    @keyframes hide-navigation-item {
+        0% {
+            opacity: 1;
+            transform: translateX(50vw);
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(0vw);
         }
     }
     @keyframes active-section-overlay {

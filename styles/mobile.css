@@ -67,7 +67,6 @@
     }
     .hidden-mobile-navigation-item {
         font-size: 3em;
-        transform: translateX(0vw);
         animation: hide-navigation-item 0.5s;
     }
     .scroller-overlay {

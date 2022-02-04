@@ -14,10 +14,6 @@
     height: var(--footer-height);
 }
 
-.mobile-footer {
-    display: none;
-}
-
 .flex-row {
     width: 100%;
     display: flex;

@@ -1,0 +1,24 @@
+.mobile-scroller {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.mobile-scroller .slide {
+    background-color: beige;
+    scroll-snap-align: center;
+    height: 100vh;
+    border-bottom: solid black 1px;
+}
+
+.background-container  {
+    height: 100vh;
+}
+
+.background-container img {
+    object-fit: cover;
+}
+
+footer {
+    height: 100vh;
+}

@@ -24,9 +24,18 @@
     right: 25vw;
 }
 
-.button-link {
+.button-link-age-check {
     /** Override */
     width: 150px;
-    height: 60px;
+    height: 60px;    
+    border-radius: 2px;
+    border: solid 2px var(--secondary-text-color);
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     font-size: 15px;
 }

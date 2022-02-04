@@ -19,6 +19,38 @@
     object-fit: cover;
 }
 
+.scroller-overlay {
+    top: calc(50% - 2em - 0.8em);
+    right: -2em;
+    width: 2em;
+    padding-right: 0.6em;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.scroller-overlay-item {
+    height: 1em;
+    width: 1em;
+    margin: 0.2em;
+    border: 0.15em solid var(--secondary-text-color);
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.footer-item {
+    border-radius: 3px;
+    height: 0.6em;
+}
+
+.shown-scroller-overlay {
+    right: 0;
+    animation: show-scroller-overlay 0.5s;
+}
+
 footer {
     height: 100vh;
 }

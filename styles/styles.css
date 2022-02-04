@@ -45,10 +45,12 @@
 }
 
 body, html {
-    height: 100%;
     width: 100%;
     margin: 0;
     font-family: var(--default-font-family);
+    background-color: var(--complimentary-pane-bg-color);
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
 .main-page {
@@ -74,7 +76,6 @@ body, html {
     margin-top: calc(var(--header-enlarged-height) + var(--header-enlarged-top));
     display: flex;
     flex-direction: column;
-    box-shadow: var(--full-shadow);
 }
 
 img {
@@ -116,7 +117,7 @@ img {
 }
 
 .parallax-high {
-    height: 700px;
+    height: 100vh;
 }
 
 .parallax-low {
@@ -136,6 +137,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .button-link:hover {
@@ -181,6 +183,14 @@ img {
 
 .mobile-navigation {
     display: none;
+}
+
+.link {
+    color: white;
+}
+
+.no-line {
+    text-decoration: none;
 }
 
 @keyframes border-enlarged-shrunk {

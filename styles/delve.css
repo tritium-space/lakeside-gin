@@ -1,0 +1,21 @@
+.gallery {
+    min-height: calc(100vh - var(--header-enlarged-height));
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 15px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.thumbnail {
+    width: 100%;
+    max-height: 100%;
+}

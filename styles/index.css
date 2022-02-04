@@ -9,22 +9,40 @@
 .fixed-section { 
     width: 100%;
     height: 500px;
+}
+
+.distillery-front {
     background-size: cover; 
     background-position: center center; 
     background-repeat: no-repeat; 
-    background-image: url('../assets/index/distillery_front.jpg');
-  }
+    background-image: url('../assets/index/distillery_inside-min.jpg');
+}
+
+.panorama {
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-image: url('../assets/index/panorama-min.jpg');
+}
 
 #bg1 {
-    background-image: url("../assets/index/whiskey_bottles.jpg");
+    background-image: url("../assets/index/whisky-min.jpg");
 }
 
 #bg2 {
-    background-image: url("../assets/index/gin_bottles.png");
+    background-image: url("../assets/index/gin-min.jpg");
 }
 
 #bg3 {
-    background-image: url("../assets/index/distillery_inside.jpg");
+    background-image: url("../assets/index/distillery_front-min.jpg");
+}
+
+#bg4 {
+    background-image: url("../assets/index/panorama-min.jpg");
+}
+
+#bg5 {
+    background-image: url("../assets/index/grain-large-min.jpg");
 }
 
 .overlay {
@@ -40,6 +58,10 @@
     color: var(--secondary-text-color);
 }
 
+.description {
+    max-width: 600px;
+}
+
 .description-container {
     max-width: 60%;
     display: flex;
@@ -48,6 +70,10 @@
     align-items: center;
     padding: 15px;
     background: rgba(0, 0, 0, .5);
+}
+
+.wide {
+    width: 400px;
 }
 
 .overlay .logo-container {

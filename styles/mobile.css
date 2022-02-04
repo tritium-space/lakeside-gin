@@ -125,7 +125,7 @@
         scroll-snap-align: start;
     }
     .fixed-section {
-        background-image: url('../assets/index/Distillery3.JPG');
+        background-image: url('../assets/index/Distillery3-min.JPG');
     }
     .description-container {
         max-width: 100%;
@@ -161,7 +161,7 @@
     .montain-range {
         height: 10em;
         width: 100%;
-        background-image: url('../assets/index/Bergkette_Banner_02-linie-weiss.png');
+        background-image: url('../assets/index/pilatus-skyline.png');
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" sizes="192x192" href="assets/static/icon.png">
-    <title>Seedistillerie Beckenried</title>
+    <title>Seedistillerie Beckenried | Team</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
@@ -15,35 +15,19 @@
 
 <body data-js="body">
     <div class="age-check-overlay" data-js="age-check">
-        <div class="age-check">
-            <div class="logo-container">
-                <img src="assets/static/logo_cursive.png">
-            </div>
-            <div class="age-description">
-                <p>Sie müssen über 18 Jahre alt sein, um diese Website besuchen zu können.</p>
-            </div>
-            <div class="age-input">
-                <span class="input-container">
-                    <input id="day-input" class="single-age-input" onkeyup="dayInput(this.value);" placeholder="DD">
-                    <span class="bottom-border"></span>
-                </span>
-                <span class="date-divider"></span>
-                <span class="input-container">
-                    <input id="month-input" class="single-age-input" onkeyup="monthInput(this.value);" placeholder="MM">
-                    <span class="bottom-border"></span>
-                </span>
-                <span class="date-divider"></span>
-                <span class="input-container">
-                    <input id="year-input" class="single-age-input" onkeyup="yearInput(this.value);" placeholder="YYYY">
-                    <span class="bottom-border"></span>
-                </span>
-            </div>
-            <button class="button-link-hc" onclick="submit();">Zur Webseite</button>
+        <div class="age-check-container">
+            <button class="button-link" onclick="c();">Ich bin über 18</button>
+            <button class="button-link" onclick="help();">Ich bin unter 18</button>
         </div>
     </div>
 
     <header id="header" class="header enlarged">
         <div class="header-items">
+            <div class="hamburger" data-js="hamburger" data-status="closed">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
             <div class="group">
                 <div class="item-container">
                     <div class="link-container">
@@ -53,7 +37,7 @@
                 </div>
                 <div class="item-container">
                     <div class="link-container">
-                        <a href="history.html">Geschichte</a>
+                        <a href="https://see-distillerie.dod.ch/">Shop</a>
                     </div>
                     <span class="bottom-border"></span>
                 </div>
@@ -64,13 +48,13 @@
             <div class="group">
                 <div class="item-container">
                     <div class="link-container">
-                        <a href="https://see-distillerie.dod.ch/">Shop</a>
+                        <a href="team.html">Team</a>
                     </div>
                     <span class="bottom-border"></span>
                 </div>
                 <div class="item-container">
                     <div class="link-container">
-                        <a href="team.html">Team</a>
+                        <a href="contact.html">Kontakt</a>
                     </div>
                     <span class="bottom-border"></span>
                 </div>
@@ -79,73 +63,25 @@
     </header>
 
     <div class="main-page">
-        <div class="main-page-scroller">
-            <div class="partner">
-                <img src="assets/portrait/gerold.jpg">
-                <div class="name">
-                    <h1>Gerold</h1>
-                </div>
-            </div>
-            <div class="partner">
-                <img src="assets/portrait/beat.jpg">
-                <div class="name">
-                    <h1>Beat</h1>
-                </div>
-            </div>
-            <div class="partner">
-                <img src="assets/portrait/paul.jpg">
-                <div class="name">
-                    <h1>Paul</h1>
-                </div>
-            </div>
-            <div class="partner">
-                <img src="assets/portrait/nils.jpg">
-                <div class="name">
-                    <h1>Nils</h1>
-                </div>
-            </div>
-            <div class="partner">
-                <img src="assets/portrait/armin.jpg">
-                <div class="name">
-                    <h1>Armin</h1>
-                </div>
-            </div>
-            <div class="partner">
-                <img src="assets/portrait/philipp.jpg">
-                <div class="name">
-                    <h1>Philipp</h1>
-                </div>
-            </div>
-            <div class="partner">
-                <img src="assets/portrait/blackface.jpg">
-                <div class="name">
-                    <h1>Roger</h1>
-                </div>
-            </div>
-            <div class="partner">
-                <img src="assets/portrait/blackbody.jpg">
-                <div class="name">
-                    <h1>Andy</h1>
-                </div>
-            </div>
-        </div>
+        <div class="main-page-scroller" data-js="team"></div>
 
         <footer class="desktop-footer">
             <div class="company-info">
                 <p>See-Distillerie Beckenried</p>
                 <p>Buochserstrasse 52</p>
                 <p>6375 Beckenried Switzerland</p>
-                <p>www.see-distillerie.ch | info@see-distillerie.ch</p>
+                <p><a class="link no-line" href="www.see-distillerie.ch">www.see-distillerie.ch</a> | <a class="link no-line" href="mailto: info@see-distillerie.ch">info@see-distillerie.ch</a></p>
             </div>
             <div class="page-info">
                 <div class="copyright">
-                    <p>Copyright 2020 | See-Distillerie Beckenried AG | All Rights Reserved </p>
+                    <p>Copyright 2022 | See-Distillerie Beckenried AG | All Rights Reserved </p>
                 </div>
             </div>
         </footer>
     </div>
 
     <script src="lib/age-check.js"></script>
+    <script src="lib/team.js"></script>
     <script src="lib/main.js"></script>
 </body>
 

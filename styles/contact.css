@@ -1,0 +1,26 @@
+.main-page {
+    height: calc(100vh - var(--footer-height));
+}
+
+.desktop-footer {
+    z-index: 0;
+}
+
+.banner {
+    height: 100%;
+    width: 100%;
+    background: url("../assets/contact/banner.png") no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.banner-info {
+    position: relative;
+    padding: 1em;
+    text-align: center;
+    color: white;
+}

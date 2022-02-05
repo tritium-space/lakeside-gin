@@ -10,7 +10,6 @@ body {
 }
 
 .mobile-scroller .slide {
-    background-color: beige;
     scroll-snap-align: center;
     height: 100vh;
     border-bottom: solid black 1px;

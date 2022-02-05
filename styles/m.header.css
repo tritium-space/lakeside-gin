@@ -17,23 +17,38 @@ header .logo-container {
     padding: .6em 0;
 }
 
-header .hamburger {
+.hamburger {
     position: absolute;
-    left: .5em;
-    height: 100%;
-    width: 12vw;
-    padding: 2.5vh 2vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    left: 1em;
 }
 
-header .hamburger-line {
-    height: 0.3vh;
-    width: 100%;
-    background-color: white;
-    border: 0.1vh solid white;
-    border-radius: 5em;
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.hamburger.open span:nth-child(1) {
+    -webkit-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    -o-transform: translateY(15px);
+    transform: translateY(15px);
+}
+
+.hamburger.open span:nth-child(3) {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -o-transform: translateY(-15px);
+    transform: translateY(-15px);
 }
 
 header .logo-container img {

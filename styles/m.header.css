@@ -1,0 +1,122 @@
+header {
+    position: fixed;
+    height: var(--header-shrunk-height);
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: black;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--bottom-shadow);
+}
+
+header .logo-container {
+    height: 100%;
+    padding: .6em 0;
+}
+
+header .hamburger {
+    position: absolute;
+    left: .5em;
+    height: 100%;
+    width: 12vw;
+    padding: 2.5vh 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header .hamburger-line {
+    height: 0.3vh;
+    width: 100%;
+    background-color: white;
+    border: 0.1vh solid white;
+    border-radius: 5em;
+}
+
+header .logo-container img {
+    height: 100%;
+}
+
+.active-section {
+    background-color: rgba(255, 255, 255, 1);
+    animation: active-section-overlay 0.5s;
+}
+
+.inactive-section {
+    animation: inactive-section-overlay 0.5s;
+}
+
+@keyframes show-navigation {
+    0% {
+        height: 0;
+        opacity: 0;
+        top: 1em;
+    }
+
+    100% {
+        height: 100vh;
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes hide-navigation {
+    0% {
+        height: 100vh;
+        opacity: 1;
+        top: 0;
+    }
+
+    100% {
+        height: 0;
+        opacity: 0;
+        top: 1em;
+    }
+}
+
+@keyframes show-navigation-item {
+    0% {
+        opacity: 0;
+        transform: translateX(0vw);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(50vw);
+    }
+}
+
+@keyframes hide-navigation-item {
+    0% {
+        opacity: 1;
+        transform: translateX(50vw);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes active-section-overlay {
+    0% {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+
+@keyframes inactive-section-overlay {
+    0% {
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        background-color: rgba(255, 255, 255, 0);
+    }
+}

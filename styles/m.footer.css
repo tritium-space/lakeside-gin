@@ -1,4 +1,23 @@
 footer {
     position: absolute;
-    bottom: 3em;
+    bottom: 0;
+    color: white;
+    font-size: 12px;
+}
+
+footer .address {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-left: 1em;
+}
+
+footer .address p {
+    margin: 0;
+}
+
+footer .power {
+    text-align: center;
+    margin: .5em 0 .341em 0;
 }

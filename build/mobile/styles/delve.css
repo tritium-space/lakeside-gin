@@ -1,0 +1,4 @@
+.mobile-scroller {
+    position: absolute;
+    top: var(--header-shrunk-height);
+}

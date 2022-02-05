@@ -10,6 +10,7 @@ setTimeout(function () {
 
 hamburgerDiv.addEventListener("click", () => {
     if (hamburgerDiv.dataset.status == "open") {
+        hamburgerDiv.dataset.status = "closed";
         hamburgerDiv.classList.remove("open");
         navItemList.slice().reverse().forEach(
             (item, index) => {
@@ -21,13 +22,11 @@ hamburgerDiv.addEventListener("click", () => {
         )
         setTimeout(() => {
             mobileNavigationDiv.classList.remove("mobile-navigation--visible");
-            hamburgerDiv.dataset.status = "closed";
-            mobileNavContainer.classList.remove("mobile-navigation-container--hidden");
         }, 50)
     } else {
+        hamburgerDiv.dataset.status = "open";
         hamburgerDiv.classList.add("open");
         mobileNavigationDiv.classList.add("mobile-navigation--visible");
-        mobileNavContainer.classList.remove("mobile-navigation-container--hidden");
         navItemList.forEach(
             (item, index) => {
                 setTimeout(() => {
@@ -36,7 +35,6 @@ hamburgerDiv.addEventListener("click", () => {
                 }, index * interval)
             }
         )
-        hamburgerDiv.dataset.status = "open"
     }
 })
 

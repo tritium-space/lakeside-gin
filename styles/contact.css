@@ -2,7 +2,7 @@
     height: calc(100vh - var(--footer-height));
 }
 
-.desktop-footer {
+footer {
     z-index: 0;
 }
 

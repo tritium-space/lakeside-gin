@@ -2,12 +2,9 @@
     margin-bottom: 0;
 }
 
-.main-page-scroller {
-    margin-bottom: var(--footer-height);
-}
-
 .gallery {
     min-height: calc(100vh - var(--header-enlarged-height) - var(--footer-height));
+    width: 100%;
 }
 
 .gallery-container {

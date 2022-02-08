@@ -64,30 +64,32 @@ body.preload * {
     background-color: var(--subordinate-pane-bg-color);
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-bottom: var(--footer-height);
+    z-index: 1;
 }
 
 .main-page-scroller {
-    width: var(--main-page-width);
-    max-width: var(--main-page-max-width);
-    margin-top: calc(var(--header-enlarged-height) + var(--header-enlarged-top));
-    display: flex;
-    flex-direction: column;
-    box-shadow: var(--full-shadow);
-}
-
-.main-page-scroller-max {
     width: 100%;
     margin-top: calc(var(--header-enlarged-height) + var(--header-enlarged-top));
     display: flex;
     flex-direction: column;
+    z-index: 2;
+}
+
+.main-page-scroller--center {
+    align-items: center;
 }
 
 img {
     height: 100%;
     max-width: 100%;
+}
+
+.full-shadow {
+    box-shadow: var(--full-shadow);
 }
 
 .bottom-shadow {

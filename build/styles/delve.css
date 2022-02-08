@@ -1,5 +1,13 @@
+.main-page {
+    margin-bottom: 0;
+}
+
+.main-page-scroller {
+    margin-bottom: var(--footer-height);
+}
+
 .gallery {
-    min-height: calc(100vh - var(--header-enlarged-height));
+    min-height: calc(100vh - var(--header-enlarged-height) - var(--footer-height));
 }
 
 .gallery-container {
@@ -12,7 +20,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1em 0;
 }
 
 .cell img {
@@ -22,4 +29,8 @@
 .thumbnail {
     max-height: 100%;
     width: 100%;
+}
+
+footer {
+    z-index: 0;
 }

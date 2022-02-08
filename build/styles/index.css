@@ -21,24 +21,24 @@
     background-image: url('../assets/home/panorama-min.jpg');
 }
 
-#bg1 {
-    background-image: url("../assets/home/whisky-min.jpg");
-}
-
-#bg2 {
-    background-image: url("../assets/home/gin-min.jpg");
-}
-
-#bg3 {
+#parallax-chalet {
     background-image: url("../assets/home/distillery_front-min.jpg");
 }
 
-#bg4 {
+#parallax-lake {
     background-image: url("../assets/home/panorama-min.jpg");
 }
 
-#bg5 {
+#parallax-grain {
     background-image: url("../assets/home/grain-large-min.jpg");
+}
+
+#parallax-whisky {
+    background-image: url("../assets/home/whisky-min.jpg");
+}
+
+#parallax-gin {
+    background-image: url("../assets/home/gin-min.jpg");
 }
 
 .overlay {

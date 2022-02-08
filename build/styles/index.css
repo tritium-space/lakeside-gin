@@ -2,22 +2,22 @@
     position: relative;
 }
 
-.fixed-section { 
+.fixed-section {
     width: 100%;
     height: 500px;
 }
 
 .distillery-front {
-    background-size: cover; 
-    background-position: center center; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-image: url('../assets/home/distillery_inside-min.jpg');
 }
 
 .panorama {
-    background-size: cover; 
-    background-position: center center; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-image: url('../assets/home/panorama-min.jpg');
 }
 
@@ -54,6 +54,10 @@
     color: var(--secondary-text-color);
 }
 
+.overlay--left {
+    align-items: flex-start;
+}
+
 .description {
     max-width: 600px;
 }
@@ -69,15 +73,16 @@
     border-radius: 4px;
 }
 
-.wide {
-    width: 400px;
+.description-container--left {
+    margin-left: 5em;
+    width: 300px;
 }
 
 .overlay .logo-container {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .overlay .logo-container p {

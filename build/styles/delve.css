@@ -15,6 +15,10 @@
     margin: 1em 0;
 }
 
+.cell img {
+    object-fit: cover;
+}
+
 .thumbnail {
     max-height: 100%;
     width: 100%;

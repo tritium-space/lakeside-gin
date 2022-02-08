@@ -7,18 +7,11 @@
     height: 500px;
 }
 
-.distillery-front {
+.distillery-inside {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url('../assets/home/distillery_inside-min.jpg');
-}
-
-.panorama {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url('../assets/home/panorama-min.jpg');
+    background-image: url('../assets/home/mood-shot.jpg');
 }
 
 #parallax-chalet {

@@ -1,9 +1,6 @@
-.main-page {
-    height: calc(100vh - var(--footer-height));
-}
-
-footer {
-    z-index: 0;
+.contact {
+    height: calc(100vh - var(--header-enlarged-height));
+    width: 100%;
 }
 
 .banner {
@@ -23,4 +20,12 @@ footer {
     padding: 1em;
     text-align: center;
     color: white;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: var(--bottom-shadow) inset;
 }

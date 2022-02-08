@@ -32,6 +32,7 @@
 }
 
 #logo-container.enlarged {
+    cursor: pointer;
     height: var(--header-logo-enlarged-height);
     animation: logo-shrunk-enlarged var(--header-logo-animation-duration);
     padding: var(--header-logo-enlarged-padding);
@@ -39,6 +40,7 @@
 }
 
 #logo-container.shrunk {
+    cursor: pointer;
     height: var(--header-logo-shrunk-height);
     animation: logo-enlarged-shrunk var(--header-logo-animation-duration);
     padding: var(--header-logo-shrunk-padding);
@@ -81,7 +83,7 @@
     align-items: center;
 }
 
-.header .header-items .group .item-container .link-container:hover ~ span {
+.header .header-items .group .item-container .link-container:hover~span {
     width: var(--header-border-bottom-enlarged-width);
     animation: border-shrunk-enlarged var(--header-border-bottom-animation-duration);
 }

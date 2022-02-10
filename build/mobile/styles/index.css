@@ -7,7 +7,7 @@ img {
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     overflow-y: scroll;
-    height: 100%;
+    height: 100vh;
 }
 
 .mobile-scroller .slide {

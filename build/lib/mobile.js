@@ -49,8 +49,7 @@ let observer = new IntersectionObserver(function (entries) {
     scrollerOverlayItems.forEach(
         item => {
             item.classList.remove("active-section")
-            item.classList.add("inactive-section")
-        }
+l        }
     )
 
     entries.forEach(
@@ -60,7 +59,6 @@ let observer = new IntersectionObserver(function (entries) {
                 if (!item.parentElement.classList.contains("shown-scroller-overlay")) {
                     item.parentElement.classList.add("shown-scroller-overlay")
                 }
-                item.classList.remove("inactive-section")
                 item.classList.add("active-section")
             }
         }

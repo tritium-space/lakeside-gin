@@ -54,38 +54,15 @@ img {
     border-radius: 50%;
     box-sizing: border-box;
     display: inline-block;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color .5s;;
+}
+
+.active-section {
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .shown-scroller-overlay {
     right: 0;
     animation: show-scroller-overlay 0.5s;
-}
-
-.active-section {
-    background-color: rgba(255, 255, 255, 1);
-    animation: active-section-overlay 0.5s;
-}
-
-.inactive-section {
-    animation: inactive-section-overlay 0.5s;
-}
-
-@keyframes active-section-overlay {
-    0% {
-        background-color: rgba(255, 255, 255, 0);
-    }
-
-    100% {
-        background-color: rgba(255, 255, 255, 1);
-    }
-}
-
-@keyframes inactive-section-overlay {
-    0% {
-        background-color: rgba(255, 255, 255, 1);
-    }
-
-    100% {
-        background-color: rgba(255, 255, 255, 0);
-    }
 }

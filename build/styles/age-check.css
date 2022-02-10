@@ -13,6 +13,7 @@
 }
 
 .age-check-container {
+    width: 100%;
     opacity: 1;
     position: absolute;
     display: flex;
@@ -20,8 +21,6 @@
     align-items: center;
     bottom: 0;
     top: 0;
-    left: 25vw;
-    right: 25vw;
 }
 
 .button-link-age-check {

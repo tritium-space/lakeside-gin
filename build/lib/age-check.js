@@ -2,7 +2,7 @@ const preventionSite = "https://suchtpraevention-zh.ch/safer-use-und-sucht/alkoh
 const localStorageTokenName = "sdAgeCheck";
 const token = "true";
 
-const body = document.querySelector("[data-js='body']");
+const body = document.querySelector("body");
 const ageCheck = document.querySelector("[data-js='age-check']");
 
 function closePrompt() {

@@ -1,36 +1,13 @@
+const assetsFolder = location.origin + "/assets/portrait/"
 const teamMembers = [
-    {
-        name: "Andy",
-        src: "assets/portrait/andy-min.jpg"
-    },
-    {
-        name: "Roger",
-        src: "assets/portrait/roger-min.jpg"
-    },
-    {
-        name: "Philipp",
-        src: "assets/portrait/philipp-min.jpg"
-    },
-    {
-        name: "Armin",
-        src: "assets/portrait/armin-min.jpg"
-    },
-    {
-        name: "Nils",
-        src: "assets/portrait/nils-min.jpg"
-    },
-    {
-        name: "Paul",
-        src: "assets/portrait/paul-min.jpg"
-    },
-    {
-        name: "Beat",
-        src: "assets/portrait/beat-min.jpg"
-    },
-    {
-        name: "Gerold",
-        src: "assets/portrait/gerold-min.jpg"
-    }
+    "Andy",
+    "Roger",
+    "Philipp",
+    "Armin",
+    "Nils",
+    "Paul",
+    "Beat",
+    "Gerold"
 ];
 
 const e = document.querySelector("[data-js=team]");
@@ -48,11 +25,11 @@ for (const member of teamMembers) {
     p = document.createElement("div");
     p.classList.add("partner");
     img = document.createElement("img");
-    img.src = member.src;
+    img.src = `${assetsFolder}${member.toLowerCase()}-min.jpg`;
     n = document.createElement("div");
     n.classList.add("name");
     h = document.createElement("h1");
-    h.innerText = member.name;
+    h.innerText = member;
     n.appendChild(h);
     p.appendChild(img);
     p.appendChild(n);

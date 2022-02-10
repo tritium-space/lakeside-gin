@@ -1,8 +1,8 @@
 const mobileNavigationDiv = document.querySelector("[data-js='mobile-navigation']")
 const navItemList = Array.from(document.getElementsByClassName("mobile-navigation-item"))
+const interval = 150
 const mobileNavContainer = document.querySelector("[data-js='mobile-navigation-container']");
 const hamburgerDiv = document.querySelector("[data-js='hamburger']")
-const interval = 150
 
 setTimeout(function () {
     document.body.classList.remove("preload");
@@ -37,34 +37,3 @@ hamburgerDiv.addEventListener("click", () => {
         )
     }
 })
-
-let options = {
-    root: document.getElementsByClassName("mobile-scroller")[0],
-    rootMargin: '0px',
-    threshold: 0.5
-}
-
-let observer = new IntersectionObserver(function (entries) {
-    scrollerOverlayItems = Array.from(document.getElementsByClassName("scroller-overlay-item"))
-    scrollerOverlayItems.forEach(
-        item => {
-            item.classList.remove("active-section")
-l        }
-    )
-
-    entries.forEach(
-        entry => {
-            if (entry.isIntersecting) {
-                let item = document.querySelector("[data-js='" + entry.target.id + "']")
-                if (!item.parentElement.classList.contains("shown-scroller-overlay")) {
-                    item.parentElement.classList.add("shown-scroller-overlay")
-                }
-                item.classList.add("active-section")
-            }
-        }
-    )
-}, options);
-let targets = Array.from(document.getElementsByClassName("slide"));
-targets.forEach(element => {
-    observer.observe(element);
-});

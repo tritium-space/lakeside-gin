@@ -3,7 +3,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 } else {
     setTimeout(function () {
         document.body.classList.remove("preload");
-    }, 300);
+    }, 600);
 
     const initScrollCapture = () => {
         const HEADER = "header";

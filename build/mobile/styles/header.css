@@ -56,11 +56,10 @@ header .logo-container img {
 }
 
 .mobile-navigation {
-    position: absolute;
+    position: fixed;
     right: 0;
     left: 0;
-    top: 0;
-    bottom: 0;
+    height: 100vh;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -71,7 +70,7 @@ header .logo-container img {
 }
 
 .mobile-navigation--visible {
-    transform: translateX(-50vw);
+    transform: translateX(-25vw);
 }
 
 .mobile-navigation .container {
@@ -79,30 +78,23 @@ header .logo-container img {
     right: 0;
     top: var(--header-shrunk-height);
     bottom: 0;
-    width: 50vw;
+    width: var(--mobile-menu-width);
 }
 
-.mobile-navigation-container {
-    visibility: visible;
-    left: -40vw;
-    position: absolute;
+.links {
+    margin-top: 1em;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
-.mobile-navigation-item {
-    font-size: 20px;
+.links a {
+    margin-bottom: 1em;
+    text-decoration: none;
+    font-size: 25px;
     color: white;
-}
-
-.shown-mobile-navigation-item {
-    transform: translateX(50vw);
-    animation: show-navigation-item 0.5s;
-}
-
-.hidden-mobile-navigation-item {
-    animation: hide-navigation-item 0.5s;
 }
 
 .power {
@@ -114,28 +106,4 @@ header .logo-container img {
     text-align: center;
     width: 100%;
     height: 2.5em;
-}
-
-@keyframes show-navigation-item {
-    0% {
-        opacity: 0;
-        transform: translateX(0vw);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(50vw);
-    }
-}
-
-@keyframes hide-navigation-item {
-    0% {
-        opacity: 1;
-        transform: translateX(50vw);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateX(0vw);
-    }
 }

@@ -1,4 +1,8 @@
-let options = {
+const texts = [
+    `<p class="description">Die Leidenschaft für die liebevolle handwerkliche Herstellung hochwertiger Destillate aus besten Zutaten verbindet unser Team.</p><p class="description">Wir lieben es, aus regionalen Grundstoffen hochwertige Destillate herzustellen und diese zu zelebrieren.</p>`
+]
+
+const options = {
     root: document.getElementsByClassName("mobile-scroller")[0],
     rootMargin: '0px',
     threshold: 0.5
@@ -28,3 +32,7 @@ let targets = Array.from(document.getElementsByClassName("slide"));
 targets.forEach(element => {
     observer.observe(element);
 });
+
+function delve(name) {
+    window.location.href = `${name}.html`;
+}

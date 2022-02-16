@@ -3,7 +3,6 @@
     top: var(--header-shrunk-height);
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 .partner {

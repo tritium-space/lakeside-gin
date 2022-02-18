@@ -67,6 +67,10 @@
     background-image: url("../assets/home/gin-min.jpg");
 }
 
+#parallax-vodka {
+    background-image: url("../assets/home/vodka.jpg");
+}
+
 .overlay {
     height: 100%;
     width: 100%;

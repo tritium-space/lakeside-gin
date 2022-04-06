@@ -90,6 +90,24 @@ img {
     color: white;
 }
 
+.shop-link {
+    background: rgba(66, 70, 66, .4);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(13vh - 50px);
+    right: 0px;
+}
+
+.shop-link a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
 .text-overlay {
     position: absolute;
     display: flex;

@@ -110,7 +110,6 @@ img {
 
 .text-overlay {
     top: var(--header-shrunk-height);
-    z-index: 100;
     width: 100%;
     height: calc(100% - var(--header-shrunk-height));
     display: flex;

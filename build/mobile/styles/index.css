@@ -109,11 +109,15 @@ img {
 }
 
 .text-overlay {
-    position: absolute;
+    top: var(--header-shrunk-height);
+    z-index: 100;
+    width: 100%;
+    height: calc(100% - var(--header-shrunk-height));
     display: flex;
-    top: 10vh;
+    position: absolute;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: white;
     width: 100%;
     padding: 2em;

@@ -7,3 +7,14 @@ img {
     position: absolute;
     top: var(--header-shrunk-height);
 }
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell {
+    position: relative
+}

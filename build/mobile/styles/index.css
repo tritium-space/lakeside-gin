@@ -91,21 +91,22 @@ img {
 }
 
 .shop-link {
-    width: 50px;
-    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: calc(13vh - 25px);
+    top: var(--header-shrunk-height);
     right: 0px;
 }
 
 .shop-link i {
-    font-size: 33px;
+    font-size: 50px;
 }
 
 .shop-link a {
+    margin: 1em;
+    height: 50px;
+    width: 50px;
     color: white;
     text-decoration: none;
 }

@@ -2,13 +2,13 @@ footer {
     position: relative;
     width: 100%;
     background-color: var(--complimentary-pane-bg-color);
-    padding: 10px 30px;
+    /* background-color: var(--elevated-pane-bg-color); */
     color: var(--secondary-text-color);
     z-index: 0;
-    padding-top: 3em;
 }
 
 footer .main-footer {
+    margin: 2em 20px 30px 20px;
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -17,6 +17,10 @@ footer .main-footer {
 
 footer .main-footer .page-info {
     height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 footer .main-footer .page-info .footer-logo-container {
@@ -26,12 +30,24 @@ footer .main-footer .page-info .footer-logo-container {
     top: 0;
 }
 
-footer .main-footer .page-info .footer-logo-container img {
-    width: 100%;
+.socials {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
 }
 
-footer .main-footer .company-info {
-    text-align: right;
+.socials .social {
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+}
+
+footer .main-footer .page-info .footer-logo-container img {
+    width: 100%;
 }
 
 footer .power {
@@ -49,4 +65,10 @@ footer .power a {
 footer p {
     margin: 0 0 7px 0;
     font-size: 13px;
+}
+
+footer .power p {
+    width: 20%;
+    text-align: center;
+    border-top: solid white 1px;
 }

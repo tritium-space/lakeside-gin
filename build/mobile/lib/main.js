@@ -5,21 +5,17 @@ const mobileNavContainer = document.querySelector("[data-js='mobile-navigation-c
 const hamburgerDiv = document.querySelector("[data-js='hamburger']")
 
 const mobileScroller = document.getElementsByClassName("mobile-scroller")[0];
-const scrollerOverlay = document.getElementsByClassName("scroller-overlay")[0]
-
-setTimeout(function () {
-    document.body.classList.remove("preload");
-}, 500);
+const scrollerOverlay = document.getElementsByClassName("scroller-overlay")[0];
 
 hamburgerDiv.addEventListener("click", () => {
     if (hamburgerDiv.dataset.status == "open") {
         exitMenu();
         mobileScroller.removeEventListener("click", exitMenu);
-        scrollerOverlay.removeEventListener("click", exitMenu);
+        if (scrollerOverlay) scrollerOverlay.removeEventListener("click", exitMenu);
     } else {
         openMenu();
         mobileScroller.addEventListener("click", exitMenu);
-        scrollerOverlay.addEventListener("click", exitMenu);
+        if (scrollerOverlay) scrollerOverlay.addEventListener("click", exitMenu);
     }
 })
 

@@ -6,8 +6,11 @@
 }
 
 img {
-    width: 100%;
     height: 100%;
+}
+
+.slide-img {
+    width: 100%;
 }
 
 .mobile-scroller {
@@ -34,7 +37,7 @@ img {
 
 .scroller-overlay {
     top: calc(50% - 2em - 0.8em);
-    right: -2em;
+    right: 0;
     width: 2em;
     padding-right: 0.6em;
     position: fixed;
@@ -42,16 +45,6 @@ img {
     flex-direction: column;
     align-items: center;
     z-index: 1;
-}
-
-.shown-scroller-overlay {
-    right: 0;
-    animation: show-scroller-overlay 0.5s;
-}
-
-.hidden-scroller-overlay {
-    right: -2em;
-    animation: hide-scroller-overlay 0.5s;
 }
 
 .scroller-overlay-item {
@@ -72,7 +65,6 @@ img {
 
 .shown-scroller-overlay {
     right: 0;
-    animation: show-scroller-overlay 0.5s;
 }
 
 .impression-link {

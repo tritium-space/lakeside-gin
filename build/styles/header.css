@@ -8,6 +8,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: var(--header-enlarged-height);
+    top: var(--header-enlarged-top);
 }
 
 .header-items {
@@ -19,32 +21,11 @@
     align-items: center;
 }
 
-.shrunk {
-    height: var(--header-shrunk-height);
-    top: var(--header-shrunk-top);
-    animation: enlarged-shrunk var(--header-animation-duration);
-}
-
-.enlarged {
-    height: var(--header-enlarged-height);
-    top: var(--header-enlarged-top);
-    animation: shrunk-enlarged var(--header-animation-duration);
-}
-
-#logo-container.enlarged {
+.logo-container {
     cursor: pointer;
     height: var(--header-logo-enlarged-height);
-    animation: logo-shrunk-enlarged var(--header-logo-animation-duration);
     padding: var(--header-logo-enlarged-padding);
     box-shadow: var(--full-shadow);
-}
-
-#logo-container.shrunk {
-    cursor: pointer;
-    height: var(--header-logo-shrunk-height);
-    animation: logo-enlarged-shrunk var(--header-logo-animation-duration);
-    padding: var(--header-logo-shrunk-padding);
-    box-shadow: none;
 }
 
 .header .header-items .logo-container {
@@ -118,68 +99,5 @@
 
     100% {
         width: var(--header-border-bottom-enlarged-width);
-    }
-}
-
-@keyframes enlarged-shrunk {
-    0% {
-        height: var(--header-enlarged-height);
-        top: var(--header-enlarged-top);
-    }
-
-    100% {
-        height: var(--header-shrunk-height);
-        top: var(--header-shrunk-top);
-    }
-}
-
-@keyframes shrunk-enlarged {
-    0% {
-        height: var(--header-shrunk-height);
-        top: var(--header-shrunk-top);
-    }
-
-    100% {
-        height: var(--header-enlarged-height);
-        top: var(--header-enlarged-top);
-        ;
-    }
-}
-
-@keyframes logo-enlarged-shrunk {
-    0% {
-        height: var(--header-logo-enlarged-height);
-        padding: var(--header-logo-enlarged-padding);
-        box-shadow: var(--full-shadow);
-    }
-
-    100% {
-        height: var(--header-logo-shrunk-height);
-        padding: var(--header-logo-shrunk-padding);
-        box-shadow: none;
-    }
-}
-
-@keyframes logo-shrunk-enlarged {
-    0% {
-        height: var(--header-logo-shrunk-height);
-        padding: var(--header-logo-shrunk-padding);
-        box-shadow: none;
-    }
-
-    100% {
-        height: var(--header-logo-enlarged-height);
-        padding: var(--header-logo-enlarged-padding);
-        box-shadow: var(--full-shadow);
-    }
-}
-
-@keyframes font-bold-normal {
-    0% {
-        font-weight: bold;
-    }
-
-    100% {
-        font-weight: normal;
     }
 }
